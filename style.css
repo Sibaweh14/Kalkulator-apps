@@ -27,7 +27,7 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-#button{
+input , #button{
     display: flex;
     width: 100px;
     height: 68px;
