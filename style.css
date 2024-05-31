@@ -7,20 +7,27 @@ body {
             background: linear-gradient(90deg, rgba(32, 113, 235, 0.849), rgb(156, 15, 175));
             background-size: 400% 400%;
             animation: gradientAnimation 15s ease infinite;
+
 }
 .container {
     width: 480px;
-    background-color: rgb(155, 0, 160);
+    background-color: rgba(255, 255, 255, 0.2);
     margin: auto;
     padding: 10px;
     border-radius: 8px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    opacity: 0.7;
+    border: 2px solid gray;
+    box-shadow: 4px 4px;
     
 }
 #output {
     background-color: rgb(255, 255, 255);
     height: 100px;
-    
+    text-align: center;
     border-radius: 7px;
+    font-size: 50px;
     
 }
 #buttoncontainer{
@@ -54,3 +61,4 @@ input , #button{
         background-position: 0% 50%;
     }
 }
+
