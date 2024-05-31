@@ -14,26 +14,25 @@
         <div class="container">
             <div id="output"></div>
             <div id="buttoncontainer">
-                <input type="button" value="C">
-                <button id="button"><i class="fa-solid  fa-delete-left"></i></button>
-                <button id="button"><i class="fa-solid fa-percent"></i></button>
-                <button id="button"><i class="fa-solid fa-divide"></i></button>
-                <input type="button" value="7">
-                <input type="button" value="8">
-                <input type="button" value="9">
-                <button id="button"><i class="fa-solid fa-xmark"></i></button>
-                <input type="button" value="4">
-                <input type="button" value="5">
-                <input type="button" value="6">
-                <button id="button"><i class="fa-solid fa-minus"></i></button>
-                <input type="button" value="1">
-                <input type="button" value="2">
-                <input type="button" value="3">
-                <button id="button"><i class="fa-solid fa-plus"></i></button>
-                <input type="button" value="">
-                <input type="button" value="0">
-                <input type="button" value=".">
-                <button id="button"><i class="fa-solid fa-equals"></i></button>
+                <input type="button" value="C" onclick="clearDisplay()">
+                <button id="button" value=""><i class="fa-solid  fa-delete-left"></i></button>
+                <button id="button" value="/100"><i class="fa-solid fa-percent"></i></button>
+                <button id="button" value="/" onclick="handleOperator()"><i class="fa-solid fa-divide"></i></button>
+                <input type="button" value="7" onclick="handleNumber('7')">
+                <input type="button" value="8" onclick="handleNumber('8')">
+                <input type="button" value="9" onclick="handleNumber('9')">
+                <button id="button" value="*" onclick="handleOperator('*')"><i class="fa-solid fa-xmark"></i></button>
+                <input type="button" value="4" onclick="handleNumber('4')">
+                <input type="button" value="5" onclick="handleNumber('5')">
+                <input type="button" value="6" onclick="handleNumber('6')">
+                <button id="button" value="-" onclick="handleOperator('-')"><i class="fa-solid fa-minus"></i></button >
+                <input type="button" value="1" onclick="handleNumber('1')">
+                <input type="button" value="2" onclick="handleNumber('2')">
+                <input type="button" value="3" onclick="handleNumber('3')">
+                <button id="button" value="+" onclick="handleOperator('+')"><i class="fa-solid fa-plus"></i></button>
+                <input type="button" value="0" onclick="handleNumber('0')" class="zero">
+                <input type="button" value="." onclick="handleNumber('.')">
+                <button id="button" value="=" onclick="calculate()"><i class="fa-solid fa-equals"></i></button>
             </div>
         </div>
         
